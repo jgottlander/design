@@ -87,7 +87,7 @@ body {
 
 .footer {
   border-top: 1px solid #222;
-  background: grey;
+  background: floralwhite;
 }
 
 .footer a {
@@ -95,8 +95,8 @@ body {
 }
 
 .footer p {
-    margin: 0;
-    padding: 3em;
+  margin: 0;
+  padding: 3em;
 }
 
 .footer .social {
