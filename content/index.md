@@ -3,7 +3,6 @@ Title: Hem
 Description: Detta är hemsidan.
 ---
 
-Hemsida
-==========================
+# Hemsida
 
 Välkommen till min portfolio i kursen design på BTH.

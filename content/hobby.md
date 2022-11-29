@@ -3,7 +3,7 @@ Title: Hobby
 Description: Page about my hobby
 ---
 
-# Min Hobbys
+# Mina Hobbys
 
 Jag gillar att sjunga, då jag är utbildad operasångare. Jag gillar också teknik, träning, film/serier och spelar lite spel då och då, mest Dead Cells och Civilization VI.
 

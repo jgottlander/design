@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @media (min-width: 360px) {
     body {
         font-size: 1em;
@@ -6,7 +8,7 @@
 
 @media (max-width: 767px) {
     .main {
-        padding: 1em 0;
+        padding: 0 0.5em 0.5em;
     }
 
     .header {
@@ -34,12 +36,35 @@
         }
     }
 
+    .landingpage {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .sidebar {
+        display: none !important;
+    }
+
+    .report {
+        grid-template-columns: auto !important;
+    }
+
+    .css,
+    .git,
+    .html,
+    .javascript,
+    .php,
+    .python,
+    .sqlite {
+        grid-column: span 1 !important;
+    }
+
     .js {
         .nav-toggle {
             display: block;
             float: right;
             width: 2em;
-            margin: 0.6667em 0;
+            margin: math.div(3, 2) em 0;
             font-size: 1.5rem;
             line-height: 2em;
             text-align: center;
