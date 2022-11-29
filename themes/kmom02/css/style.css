@@ -6521,6 +6521,10 @@ pre code {
 * {
   color: #000;
   font-family: "PT Serif", serif;
+  box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -6576,7 +6580,6 @@ a {
 .nav {
   padding: 1em 0;
   text-align: right;
-  float: right;
 }
 .nav ul {
   display: flex;
