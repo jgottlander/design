@@ -10,14 +10,21 @@ require_once(__DIR__ . "/config/config.php");
 
 // instance Pico
 $pico = new Pico(
-    __DIR__,    // root dir
-    'config/',  // config dir
-    'plugins/', // plugins dir
-    'themes/'   // themes dir
+    __DIR__,
+    // root dir
+    'config/',
+    // config dir
+    'plugins/',
+    // plugins dir
+    'themes/' // themes dir
 );
 
 // override configuration?
-//$pico->setConfig(array());
+$pico->setConfig(
+    array(
+        'session' => $_SESSION
+    )
+);
 
 // run application
 echo $pico->run();

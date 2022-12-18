@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6522,6 +6523,9 @@ pre code {
   color: #000;
   font-family: "PT Serif", serif;
   box-sizing: border-box;
+  border: 0 none;
+  margin: 0;
+  padding: 0;
 }
 
 html,
@@ -6618,7 +6622,7 @@ a {
 
 .title,
 .logo {
-  padding: 3em 3em 3em 0;
+  padding: 2em 2em 2em 0;
   float: left;
 }
 
@@ -6696,9 +6700,7 @@ a {
   font-weight: bold;
 }
 
-.color-palette {
-  margin: auto;
-  border: 1px solid black;
-  border-spacing: 4px;
-  border-collapse: separate;
+/* Längst ner i min style-dark.scss */
+.main {
+  background-color: yellow;
 }
