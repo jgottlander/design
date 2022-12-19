@@ -6589,7 +6589,7 @@ a {
 }
 .nav a,
 .nav .nav-toggle {
-  color: #333;
+  color: #000;
 }
 
 .nav-toggle {
@@ -6623,7 +6623,7 @@ a {
 }
 
 .footer {
-  background: #d3d3d3;
+  background: #7AAFBB;
 }
 
 .footer p {
@@ -6653,15 +6653,15 @@ a {
 
 .tech {
   display: inline-block;
-  border: 1px solid rgb(55, 55, 255);
-  border-left: 5px solid rgb(55, 55, 255);
+  border: 1px solid #7AAFBB;
+  border-left: 5px solid #7AAFBB;
   align-self: stretch;
   padding: 1em;
   transition: 0.25s;
 }
 
 .tech:hover {
-  border-left: 15px solid rgb(55, 55, 255);
+  border-left: 15px solid #7AAFBB;
 }
 
 .python {

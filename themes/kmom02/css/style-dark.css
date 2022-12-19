@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -6523,9 +6522,6 @@ pre code {
   color: #000;
   font-family: "PT Serif", serif;
   box-sizing: border-box;
-  border: 0 none;
-  margin: 0;
-  padding: 0;
 }
 
 html,
@@ -6593,7 +6589,7 @@ a {
 }
 .nav a,
 .nav .nav-toggle {
-  color: #333;
+  color: #000;
 }
 
 .nav-toggle {
@@ -6622,12 +6618,12 @@ a {
 
 .title,
 .logo {
-  padding: 2em 2em 2em 0;
+  padding: 3em 3em 3em 0;
   float: left;
 }
 
 .footer {
-  background: #d3d3d3;
+  background: #7AAFBB;
 }
 
 .footer p {
@@ -6657,15 +6653,15 @@ a {
 
 .tech {
   display: inline-block;
-  border: 1px solid rgb(55, 55, 255);
-  border-left: 5px solid rgb(55, 55, 255);
+  border: 1px solid #7AAFBB;
+  border-left: 5px solid #7AAFBB;
   align-self: stretch;
   padding: 1em;
   transition: 0.25s;
 }
 
 .tech:hover {
-  border-left: 15px solid rgb(55, 55, 255);
+  border-left: 15px solid #7AAFBB;
 }
 
 .python {
@@ -6700,7 +6696,61 @@ a {
   font-weight: bold;
 }
 
-/* Längst ner i min style-dark.scss */
+.color-palette {
+  margin: auto;
+  border: 1px solid black;
+  border-spacing: 4px;
+  border-collapse: separate;
+}
+
+* {
+  color: rgb(200, 200, 200);
+}
+
+body {
+  background-color: #222;
+}
+
+img {
+  filter: brightness(0.8) contrast(1.2);
+}
+
+.nav a,
+.nav .nav-toggle {
+  color: rgb(200, 200, 200);
+}
+
 .main {
-  background-color: yellow;
+  background-color: #222;
+}
+
+.footer {
+  background: #444;
+}
+
+.tech {
+  border: 1px solid #8794C6;
+  border-left: 5px solid #8794C6;
+}
+
+.tech:hover {
+  border-left: 15px solid #8794C6;
+}
+
+.color-palette {
+  border: 1px solid rgb(200, 200, 200);
+}
+
+blockquote {
+  border-left: 0.5em solid #444;
+}
+
+code {
+  border: 1px solid rgb(200, 200, 200);
+  background: #444;
+}
+
+pre {
+  border: 1px solid #8794C6;
+  background: #444;
 }

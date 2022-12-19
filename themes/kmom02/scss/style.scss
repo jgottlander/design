@@ -85,7 +85,7 @@ a {
 
     a,
     .nav-toggle {
-        color: #333;
+        color: $font-color;
     }
 }
 
@@ -123,7 +123,7 @@ a {
 // Footer
 
 .footer {
-    background: $background-alternative-color;
+    background: $primary-color;
 }
 
 .footer p {
@@ -153,15 +153,15 @@ a {
 
 .tech {
     display: inline-block;
-    border: 1px solid rgb(55, 55, 255);
-    border-left: 5px solid rgb(55, 55, 255);
+    border: 1px solid $primary-color;
+    border-left: 5px solid $primary-color;
     align-self: stretch;
     padding: 1em;
     transition: 0.25s;
 }
 
 .tech:hover {
-    border-left: 15px solid rgb(55, 55, 255);
+    border-left: 15px solid $primary-color;
 }
 
 .python {
@@ -202,7 +202,7 @@ a {
 
 .color-palette {
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid 'black';
     border-spacing: 4px;
-    border-collapse: separate
-  }
+    border-collapse: separate;
+}

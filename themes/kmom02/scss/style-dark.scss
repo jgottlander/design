@@ -1,209 +1,57 @@
-@import '../../shared/fontawesome/scss/fontawesome';
-$fa-font-path: '../../shared/fontawesome/webfonts';
-@import '../../shared/fontawesome/scss/brands';
-@import '../../shared/fontawesome/scss/solid';
-@import '../../shared/fontawesome/scss/regular';
-@import '../../node_modules/normalize.css/normalize';
-@import 'variables';
-
-@import 'blockquotes';
-@import 'code';
-@import 'mobile';
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Serif&display=swap');
+@import 'style';
 
 * {
-    color: $font-color;
-    font-family: 'PT Serif', serif;
-    box-sizing: border-box;
-    border: 0 none;
-    margin: 0;
-    padding: 0;
-}
-
-html,
-body {
-    height: 100%;
+    color: $font-color-dark;
 }
 
 body {
-    background-color: $background-color;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Open Sans', sans-serif;
+    background-color: $background-color-dark;
 }
 
 img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-.hidden {
-    display: none !important;
-}
-
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0 none;
-}
-
-.slide {
-    overflow-y: hidden !important;
-    transition: height 0.5s ease-in !important;
+    filter: brightness(0.8) contrast(1.2);
 }
 
 .nav {
-    padding: 1em 0;
-    text-align: right;
-    //float: right;
-
-    ul {
-        display: flex;
-        justify-content: flex-end;
-        padding: 1em 0;
-        list-style: none;
-    }
-
-    ul li {
-        padding: 0 1em;
-    }
-
     a,
     .nav-toggle {
-        color: #333;
+        color: $font-color-dark;
     }
-}
-
-.nav-toggle {
-    display: none;
 }
 
 .main {
-    flex: 1 0 auto;
-    padding: 0 2em 2em;
-}
-
-.icons {
-    font-size: 2em;
-}
-
-.container {
-    max-width: 48em;
-    margin: 0 auto;
-    padding: 0.5em;
-}
-
-.header,
-.footer {
-    flex: 0 0 auto;
-}
-
-.title,
-.logo {
-    padding: 2em 2em 2em 0;
-    float: left;
-    /// display: inline;
+    background-color: $background-color-dark;
 }
 
 // Footer
 
 .footer {
-    background: $background-alternative-color;
-}
-
-.footer p {
-    margin: 0;
-    padding: 2em 0;
-}
-
-.footer .social {
-    float: right;
-    padding: 1em;
-    font-size: 2rem;
-}
-
-.landingpage {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
-    max-width: 48em;
-    gap: 1em 1em;
-    margin: 0 auto;
-}
-
-.landingpage h1 {
-    grid-column: span 3;
-    justify-self: center;
+    background: $background-alternative-color-dark;
 }
 
 .tech {
-    display: inline-block;
-    border: 1px solid rgb(55, 55, 255);
-    border-left: 5px solid rgb(55, 55, 255);
-    align-self: stretch;
-    padding: 1em;
-    transition: 0.25s;
+    border: 1px solid $secondary-color;
+    border-left: 5px solid $secondary-color;
 }
 
 .tech:hover {
-    border-left: 15px solid rgb(55, 55, 255);
+    border-left: 15px solid $secondary-color;
 }
 
-.python {
-    grid-column: span 2;
+.color-palette {
+    border: 1px solid $font-color-dark;
 }
 
-.javascript {
-    grid-column: span 3;
+blockquote {
+    border-left: 0.5em solid $background-alternative-color-dark;
 }
 
-.php {
-    grid-column: span 2;
+code {
+    border: 1px solid $font-color-dark;
+    background: $background-alternative-color-dark;
 }
 
-.html {
-    grid-column: span 2;
-}
-
-.report {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 12em 36em;
-}
-
-.sidebar {
-    ul li {
-        list-style-type: none;
-    }
-
-    li {
-        padding: 0.5em 0;
-    }
-
-    a:hover {
-        font-weight: bold;
-    }
-}
-
-/* Längst ner i min style-dark.scss */
-.main {
-    background-color: yellow;
+pre {
+    border: 1px solid $secondary-color;
+    background: $background-alternative-color-dark;
 }
