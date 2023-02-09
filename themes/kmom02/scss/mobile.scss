@@ -75,4 +75,12 @@
             vertical-align: middle;
         }
     }
+
+    .car-grid {
+        display: block !important;
+    }
+
+    .car-grid .item {
+        padding: 0.5rem;
+    }
 }

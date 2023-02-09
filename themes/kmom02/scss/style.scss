@@ -5,7 +5,6 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/regular';
 @import '../../node_modules/normalize.css/normalize';
 @import 'variables';
-
 @import 'blockquotes';
 @import 'code';
 @import 'mobile';
@@ -140,7 +139,7 @@ a {
 .landingpage {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 48em;
     gap: 1em 1em;
     margin: 0 auto;
@@ -148,7 +147,6 @@ a {
 
 .landingpage h1 {
     grid-column: span 3;
-    justify-self: center;
 }
 
 .tech {
@@ -205,4 +203,17 @@ a {
     border: 1px solid 'black';
     border-spacing: 4px;
     border-collapse: separate;
+}
+
+.car-grid {
+    display: grid;
+    max-width: 48em;
+    margin: 0 auto;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.car-grid h1 {
+    grid-column: span 3;
+    justify-self: left;
 }

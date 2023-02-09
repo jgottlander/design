@@ -6517,6 +6517,12 @@ pre code {
   .js .nav-toggle > * {
     vertical-align: middle;
   }
+  .car-grid {
+    display: block !important;
+  }
+  .car-grid .item {
+    padding: 0.5rem;
+  }
 }
 * {
   color: #000;
@@ -6623,7 +6629,7 @@ a {
 }
 
 .footer {
-  background: #7AAFBB;
+  background: #7aafbb;
 }
 
 .footer p {
@@ -6640,7 +6646,7 @@ a {
 .landingpage {
   display: grid;
   justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   max-width: 48em;
   gap: 1em 1em;
   margin: 0 auto;
@@ -6648,20 +6654,19 @@ a {
 
 .landingpage h1 {
   grid-column: span 3;
-  justify-self: center;
 }
 
 .tech {
   display: inline-block;
-  border: 1px solid #7AAFBB;
-  border-left: 5px solid #7AAFBB;
+  border: 1px solid #7aafbb;
+  border-left: 5px solid #7aafbb;
   align-self: stretch;
   padding: 1em;
   transition: 0.25s;
 }
 
 .tech:hover {
-  border-left: 15px solid #7AAFBB;
+  border-left: 15px solid #7aafbb;
 }
 
 .python {
@@ -6698,7 +6703,20 @@ a {
 
 .color-palette {
   margin: auto;
-  border: 1px solid black;
+  border: 1px solid "black";
   border-spacing: 4px;
   border-collapse: separate;
+}
+
+.car-grid {
+  display: grid;
+  max-width: 48em;
+  margin: 0 auto;
+  gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.car-grid h1 {
+  grid-column: span 3;
+  justify-self: left;
 }
