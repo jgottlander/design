@@ -1,6 +1,6 @@
 ---
 Logo: image/jg.png
-Tagline: Min portfolio.
+Tagline:
 Social:
     - title: Link till mitt github repo.
       url: https://github.com/jgottlander/design

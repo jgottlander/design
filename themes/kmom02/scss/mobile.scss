@@ -6,13 +6,17 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .main {
         padding: 0 0.5em 0.5em;
     }
 
     .header {
         flex-direction: column;
+    }
+
+    .logo {
+        display: none !important;
     }
 
     .nav {
