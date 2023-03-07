@@ -6585,7 +6585,7 @@ a {
 
 .title,
 .logo {
-  padding: 1em 1em;
+  padding: 1em;
   float: left;
 }
 
@@ -6602,7 +6602,7 @@ a {
 .nav ul {
   display: flex;
   justify-content: flex-end;
-  padding: 1em 1em;
+  padding: 1em;
   list-style: none;
 }
 .nav ul li {
