@@ -1,6 +1,6 @@
 ---
 Title: Hem
-Description: Detta är hemsidan.
+Description: Detta är hemsidan
 ---
 
 # Hemsida
