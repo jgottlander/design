@@ -1,6 +1,6 @@
 RewriteEngine On
 # May be required to access sub directories
-#RewriteBase /
+# RewriteBase /
 
 # Ignore real files (images, stylesheets etc.)
 RewriteCond %{REQUEST_FILENAME} -f [OR]

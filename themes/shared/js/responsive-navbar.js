@@ -9,17 +9,16 @@
  * @version 2.1
  */
 
-function main () {
+function main()
+{
     // capability CSS classes
     document.documentElement.className = 'js';
 
     // wrap tables
     var tables = document.querySelectorAll('#main > .container > table');
-
     for (var i = 0; i < tables.length; i++) {
         if (!/\btable-responsive\b/.test(tables[i].parentElement.className)) {
             var tableWrapper = document.createElement('div');
-
             tableWrapper.className = 'table-responsive';
 
             tables[i].parentElement.insertBefore(tableWrapper, tables[i]);
@@ -29,12 +28,11 @@ function main () {
 
     // responsive menu
     var menu = document.getElementById('nav'),
-        menuToggle = document.getElementById('nav-toggle');
-
-    if (menu && menuToggle) {
-        function toggleMenuEvent (event) {
+        menuToggle = document.getElementById('nav-toggle'),
+        navIcon = document.getElementById('toggler')
+        toggleMenuEvent = function (event) {
             if (event.type === 'keydown') {
-                if ((event.keyCode !== 13) && (event.keyCode !== 32)) {
+                if ((event.keyCode != 13) && (event.keyCode != 32)) {
                     return;
                 }
             }
@@ -43,33 +41,36 @@ function main () {
 
             if (menuToggle.getAttribute('aria-expanded') === 'false') {
                 menuToggle.setAttribute('aria-expanded', 'true');
+                navIcon.className = 'fa fa-times';
+
                 utils.slideDown(menu, null, function () {
                     if (event.type === 'keydown') {
                         menu.focus();
                     }
                 });
             } else {
+                navIcon.className = 'fa fa-bars';
                 menuToggle.setAttribute('aria-expanded', 'false');
                 utils.slideUp(menu);
             }
-        }
-
-        function onResizeEvent () {
+        },
+        onResizeEvent = function () {
             if (utils.isElementVisible(menuToggle)) {
                 menu.className = 'hidden';
+                navIcon.className = 'fa fa-bars';
                 menuToggle.addEventListener('click', toggleMenuEvent);
                 menuToggle.addEventListener('keydown', toggleMenuEvent);
             } else {
                 menu.className = '';
+                navIcon.className = 'fa fa-times';
                 menu.removeAttribute('data-slide-id');
                 menuToggle.removeEventListener('click', toggleMenuEvent);
                 menuToggle.removeEventListener('keydown', toggleMenuEvent);
             }
-        }
+        };
 
-        window.addEventListener('resize', onResizeEvent);
-        onResizeEvent();
-    }
+    window.addEventListener('resize', onResizeEvent);
+    onResizeEvent();
 }
 
 main();
